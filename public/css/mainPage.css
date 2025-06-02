@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+	font-family: 'NeolostPersonaUse'; 
+	src: url("../fonts/NeolostPersonalUse-4nBPB.otf"); 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 79px);
+    background-color: #13042E;
+    background-image: url("../img/Group\ 6.png");
+    background-position: bottom; /*Например справа размещаем картинку*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+.schedule__header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 51px;
+}
+.schedule__header__mobile {
+    display: none;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 79px;
+    gap: 14px;
+}
+.schedule__header__menu__link {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.schedule__header__menu__link:first-child {
+    padding-left: 0px;
+}
+.schedule__header__register__auth {
+    width: 485px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.schedule__header__register__auth__link {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.schedule__header__register__auth__link:last-child {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 0px;
+}
+.schedule__header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 51px;
+}
+.schedule__header__logo__mobile {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.schedule__header__logo__mobile {
+    position: relative;
+}
+.schedule__header__menu__mobile {
+    width: 100%;
+    margin-top: 24.5px;
+    display: flex;
+    justify-content: center;
+}
+.schedule__header__logo__img{
+    display: none;
+}
+.schedule__header__register__auth__link:last-child {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 0px;
+}
+@media screen and (max-width: 1460px) {
+    .schedule__header__mobile {
+        display: flex;
+    }
+    .schedule__header {
+        display: none;
+    }
+    .schedule__header__register__auth {
+        width: auto;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .schedule__header__register__auth__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 35px;
+    }
+    .schedule__header__register__auth__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 35px;
+    }
+    .schedule__header__register__auth img {
+        margin-right: 16px;
+    }
+    .schedule__header__menu__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .schedule__header__menu__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 35px;
+        padding-right: 0px;
+    }
+    .schedule__header__register__auth__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 35px;
+    }
+    .schedule__header__register__auth__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 35px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .schedule__header__mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding-top: 79px;
+        gap: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .schedule__header__menu__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .schedule__header__menu__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .schedule__header__register__auth__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .schedule__header__register__auth__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .schedule__header__menu__link {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .schedule__header__menu__link:last-child {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .schedule__header__register__auth__link {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .schedule__header__register__auth__link:last-child {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainPage__header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.mainPage__header__logo__img{
+    position: relative;
+    right: 40px;
+}
+.mainPage__header__menu__link{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.mainPage__header__register__auth__link{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.mainPage__header__register__auth__link:last-child {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 0px;
+}
+.mainPage__header__menu__link:first-child{
+    padding-left: 0px;
+}
+.mainPage__header__mobile {
+    display: none;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 79px;
+    gap: 14px;
+}
+.mainPage__header__logo__mobile{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.mainPage__header__logo__mobile {
+    position: relative;
+}
+.mainPage__header__logo__mobile img {
+    position: relative;
+    right: 0px;
+}
+.mainPage__header__menu__mobile{
+    width: 100%;
+    margin-top: 24.5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainPage__header__phone{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 79px;
+    justify-content: space-between;
+}
+.mainPage__header{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainPage__header__menu__link{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.mainPage__header__menu__link:first-child{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-right: 35px;
+    padding-left: 0px;
+}
+.mainPage__header__register__auth__link{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.mainPage__header__register__auth__link:last-child{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 0px;
+}
+.mainPage__header__menu__link:first-child{
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 0px;
+    padding-right: 35px;
+}
+.mainPage__mainInfo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainPage__mainInfo__text_h1{
+    font-family: 'NeolostPersonaUse';
+    font-size: 128px;
+    color: white;
+    font-weight: 300;
+    line-height: 120%;
+}
+.mainPage__mainInfo__text_h1 span{
+    font-size: 36px;
+}
+.mainPage__mainInfo__text_p{
+    font-size: 48px;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.mainPage__mainInfo__fon__img{
+    padding-right: 63px;
+}
+.mainPage__mainInfo__fon{
+    display: flex;
+    width: 25%;
+    justify-content: right;
+}
+.mainPage__mainInfo__text{
+    width: 75%;
+}
+
+@media screen and (max-width:1820px) {
+    .mainPage__mainInfo__fon__img{
+        width: 515px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width:1610px) {
+    .mainPage__mainInfo__text_h1 {
+        font-family: 'NeolostPersonaUse';
+        font-size: 120px;
+        color: white;
+        font-weight: 300;
+        line-height: 120%;
+    }
+    .mainPage__mainInfo__text_p {
+        font-size: 40px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+@media screen and (max-width:1400px) {
+    .mainPage__mainInfo {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 142px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mainPage__header {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 79px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:1250px) {
+    .mainPage__mainInfo__text_p {
+        font-size: 28px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .mainPage__mainInfo__text_h1 {
+        font-family: 'NeolostPersonaUse';
+        font-size: 108px;
+        color: white;
+        font-weight: 300;
+        line-height: 120%;
+    }
+}
+@media screen and (max-width:1100px) {
+    .mainPage__header__register__auth__link{
+        font-size: 18px;
+    }
+    .mainPage__header__menu__link{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .mainPage__mainInfo__text{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+   }
+   .mainPage__mainInfo {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 17px;
+        display: block;
+    }
+    .mainPage__mainInfo__fon {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    .mainPage__mainInfo__text_p {
+        font-size: 28px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .mainPage__mainInfo__text_h1 {
+        font-family: 'NeolostPersonaUse';
+        font-size: 108px;
+        color: white;
+        font-weight: 300;
+        line-height: 120%;
+    }
+    .mainPage__header {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    body {
+        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 40px);
+        background-color: #13042E;
+        background-image: url("../img/Group 6.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .mainPage__header__menu__link:last-child {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    /* .mainPage__header__phone{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        justify-content: center;
+    } */
+    .mainPage__header__register__auth__link:first-child {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    .mainPage__header{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 79px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainPage__header {
+        width: 75%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .mainPage__header__register__auth{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .mainPage__header {
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .mainPage__mainInfo__text_p {
+        font-size: 22px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .mainPage__mainInfo__text_h1 {
+        font-family: 'NeolostPersonaUse';
+        font-size: 102px;
+        color: white;
+        font-weight: 300;
+        line-height: 120%;
+    }
+}
+@media screen and (max-width:520px) {
+    .mainPage__mainInfo__fon__img {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .mainPage__header__menu__link {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mainPage__header__register__auth__link {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mainPage__header__register__auth__link:last-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .mainPage__header__menu__link:first-child {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .mainPage__header__menu__link {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mainPage__header__register__auth__link:last-child {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .mainPage__mainInfo__text_p {
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .mainPage__header__menu__link:first-child {
+        font-size: 16px;
+        color: white;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .mainPage__header__menu__link:last-child {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    .mainPage__header__register__auth__link:first-child {
+        font-size: 16px;
+        padding-left: 0px;
+    }
+}
